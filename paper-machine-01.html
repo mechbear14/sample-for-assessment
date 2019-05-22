@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Paper Machine: Episode 01 - Gabe the Bear</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet"> 
+  </head>
+  <body>
+    <nav class="nav">
+        <span class="site-title">
+            <a href="index.html" style="text-decoration: none">Gabe the bear</a>
+          </span>
+      <ul class="nav-items">
+        <li><a href="#">What's on</a></li>
+        <li><a href="./projects.html">Projects</a></li>
+        <li><a href="#">Stories</a></li>
+        <li><a href="#">Playground</a></li>
+        <li><a href="#">Collections</a></li>
+        <li><a href="#">About me</a></li>
+      </ul>
+    </nav>
+    <main class="content">
+      <div class="container">
+        <iframe width="1200" height="675" src="https://www.youtube.com/embed/HcxCp-Kvvas" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <article>
+          <span class="hashtag project">Paper Machine</span>
+          <h1>01. Understanding myself</h1>
+          <small>
+            In which I read the indentation level of each line and build the
+            hierarchy
+          </small>
+          
+          <p>
+            <ul>
+              <li>Read the file</li>
+              <li>Split into lines</li>
+              <li>Count indent level</li>
+            </ul>
+          </p>
+          <p>When making nested objects:</p>
+          <p>
+            <ul>
+              <li>Create an array for each level</li>
+              <li>For Level 0, push it to array for Level 0</li>
+              <li>For Level C, make it the child of Level C-1 and push it to array for Level C</li>
+            </ul>
+          </p>
+        </article>
+        <div class="next-list">
+          <h2>This project is part of</h2>
+          <ul><span class="hashtag project">Project</span>Paper Machine
+            <li>Prev: <a href="./paper-machine.html">Paper Machine</a></li>
+            <li>Next: 02. Placeholders</li>
+          </ul>
+          <ul><span class="hashtag playground">Playground</span>Boring projects
+            <li>Prev: Powerpuff Cats</li>
+            <li>Next: Helics (and maybe transformations)</li>
+          </ul>
+        </div>
+      </div>
+    </main>
+    <footer>
+
+    </footer>
+  </body>
+</html>

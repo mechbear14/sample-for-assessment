@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
+}
+
+a {
+  all: unset;
+  cursor: pointer;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.nav {
+  height: 4rem;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.nav .site-title {
+  font-size: 2rem;
+}
+
+.nav .nav-items {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  list-style: none;
+}
+
+.nav .nav-items li {
+  margin: 0 1rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+header {
+  height: 25rem;
+}
+
+.paper-machine {
+  background-image: url("paper\ machine.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: black;
+}
+
+.content .container {
+  border: 1px #ddd solid;
+  border-radius: 0.5rem;
+  display: grid;
+  grid-template-columns: 1fr 20rem;
+  grid-column-gap: 0.5rem;
+  grid-row-gap: 0.5rem;
+}
+
+.content .container iframe {
+  background-color: black;
+  grid-column: 1 / span 2;
+  width: 100%;
+}
+
+.next-list {
+  font-size: 1.2rem;
+  background-color: #eee;
+}
+
+.next-list h2 {
+  margin: 1rem 0;
+}
+
+.next-list ul {
+  background-color: #eee;
+  border: 1px #ddd solid;
+  padding: 1rem;
+  list-style: none;
+  font-weight: bold;
+}
+
+.hashtag {
+  color: white;
+  text-transform: capitalize;
+  padding: 0.2rem;
+  border-radius: 0.2rem;
+  margin-right: 0.5rem;
+  font-weight: normal;
+}
+
+.next-list ul li {
+  font-weight: normal;
+  margin: 0.5rem 0;
+}
+
+.project {
+  background-color: green;
+}
+
+.playground {
+  background-color: purple;
+}
+
+.episodes {
+  margin: 0;
+}
+
+.episode {
+  border: 1px #ddd solid;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin: 0.5rem 0;
+}
+
+.projects .container {
+  margin-top: -20rem;
+  z-index: 2;
+  background-color: white;
+  border: 1px #ddd solid;
+  border-radius: 0.5rem;
+  height: 400px;
+}
+
+.projects-header {
+  background-color: black;
+}
+
+.display-box {
+  width: 100vw;
+  height: calc(100vh - 4rem);
+  background-image: url("paper\ machine.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.display-box::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.9),
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.9)
+  );
+}
+
+.title-box {
+  position: absolute;
+  bottom: 2rem;
+  left: 1rem;
+  color: white;
+}
+
+article ul {
+  list-style: none;
+  margin-left: 1rem;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+p {
+  margin: 0.5rem 0;
+}
+
+article {
+  font-size: 1.2rem;
+  padding: 1rem;
+}
+
+small {
+  font-size: 1rem;
+}
+
+footer {
+  margin-top: 5rem;
+}
